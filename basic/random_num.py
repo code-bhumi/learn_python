@@ -1,8 +1,8 @@
 '''
-    random_num: this program generates random array of n numbers
+    Description: this program generates random array of n numbers
     Author: Meenakshi Pal
     Date: 17/01/2023
-''''
+'''
 import random
 
 def random_array(n):
@@ -12,9 +12,9 @@ def random_array(n):
     print(v)
     
     for i in range(n - 1, -1, -1):
-        index = random.randint(0, i)
-        if index != i:
-            v[index], v[i] = v[i], v[index]
+        ind = random.randint(0, i)
+        if ind != i:
+            v[ind], v[i] = v[i], v[ind]
     return v
 
 if __name__ == '__main__':

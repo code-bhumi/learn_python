@@ -1,3 +1,8 @@
+'''
+    random_num: this program generates random array of n numbers
+    Author: Meenakshi Pal
+    Date: 17/01/2023
+''''
 import random
 
 def random_array(n):

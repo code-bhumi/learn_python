@@ -1,14 +1,26 @@
-x = int(input("what's x? "))
-y = int(input("what's y? "))
+import random
 
-z = round(x / y, 2)
+OPS = ['+', '-', '*', '/']
 
-a = int(input("what's a? "))
-b = int(input("what's b? "))
+def calc(x, op, y):
+    if op is '+':
+        return x+y
+    if op is '-':
+        return x-y
+    if op is '*':
+        return x*y
+    if op is '/':
+        return x/y            
 
-w = (a + b)
+def test():
+    for _ in range(10):
+        x = random.randint(int(-1e6), int(1e6))
+        y = random.randint(int(-1e6), int(1e6))
+        op = random.randint(0, 3)
+        print('----------------------------------------------------------')
+        print(x, OPS[op], y)
+        print(calc(x, OPS[op], y))
+        print('----------------------------------------------------------')
 
-print(f"division of numbers is... {z}")
-
-print(f"addition of numbers is... {w:.2f}")
-
+if __name__ == '__main__':
+    test()

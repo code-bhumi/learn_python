@@ -4,6 +4,7 @@ Scissors beats paper
 paper beats rock
 
 """
+
 def rock_paper_scissor():
     while True:
         options = ['rock', 'paper', 'scissor']
